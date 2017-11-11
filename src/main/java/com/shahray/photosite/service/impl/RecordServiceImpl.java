@@ -1,22 +1,24 @@
 package com.shahray.photosite.service.impl;
 
-import com.shahray.photosite.dao.RecordDao;
+import com.shahray.photosite.repository.RecordRepository;
 import com.shahray.photosite.model.Record;
 import com.shahray.photosite.service.RecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by Оля on 27.08.2017.
- */
 @Service
 public class RecordServiceImpl implements RecordService{
 
     @Autowired
-    private RecordDao dao;
+    private RecordRepository repository;
 
     @Override
-    public Record get(int id) {
-        return dao.get(id);
+    public Record save(Record record) {
+        return repository.save(record);
+    }
+
+    @Override
+    public Record getById(Long id) {
+        return repository.findById(id).orElse(null);
     }
 }

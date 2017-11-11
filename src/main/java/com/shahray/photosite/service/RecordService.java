@@ -7,5 +7,7 @@ import com.shahray.photosite.model.Record;
  */
 public interface RecordService {
 
-    Record get(int id);
+    Record save(Record record);
+
+    Record getById(Long id);
 }
