@@ -1,0 +1,27 @@
+.project
+.settings
+
+.*.swp
+target
+.classpath
+bin/
+*.log
+
+.gradle
+/build/
+/out/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
