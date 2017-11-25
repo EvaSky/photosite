@@ -1,0 +1,85 @@
+<div>upload photo dialog</div>
+<!--
+<dialog>
+    <dialog-title>
+        <span translate>Upload Photos</span>
+        <span ng-click="updc.dismiss()"><i class="fa fa-times"></i></span>
+    </dialog-title>
+    <dialog-body>
+        <div class="scrollable-content">
+            <div class="drag-area" ngf-drop ngf-select ngf-accept="'image/*'" ng-model="updc.inputPhoto"
+                 ngf-change="updc.generateThumbnail(updc.inputPhoto)" ngf-max-files="10"
+                 ng-disabled="updc.buttonsDisabled" ngf-drag-over-class="'drag-area-dragover'"
+                 ngf-multiple="true" ngf-drop-available="drop-available">
+                <h3 class="message" translate>dialog.uploadPhotos.dragAreaMessage</h3>
+            </div>
+            <div ng-if="updc.invalidFiles > 0" class="invalid-photos-upload">
+                <div class="upload-invalid-info" ng-show="updc.invalidFiles > 0" translate="dialog.uploadPhotos.invalidPhotos" translate-values="{ invalidFiles: updc.invalidFiles }"></div>
+                <div class="photo-grid">
+                    <div id="invalid_{{file.name}}" class="upload-photo-preview" ng-repeat="file in updc.files | filter: { valid: false }">
+                        <div class="upload-photo-preview_header" ng-bind="file.name"></div>
+                        <div class="upload-photo-preview_content" ng-click="updc.openPhotoSlider(file)">
+                            <img class="photo-grid-thumbnail no-select" uib-tooltip="{{file.errorMessage}}" ng-src="{{::file.thumbUrl}}"/>
+                        </div>
+                        <div class="upload-photo-preview_footer">
+                            <span>
+                                <button class="btn btn-link icon-btn" ng-click="updc.openPhotoSlider(file)">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-link icon-btn" ng-click="updc.onInfoIconClick(file)">
+                                    <i class="fa fa-info" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                            <span>
+                                <button class="btn btn-link icon-btn" ng-click="updc.onDeleteIconClick(file)">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 20px 12px;">
+            </div>
+            <div class="valid-photos-upload photo-grid">
+                <div id="valid_{{file.name}}" class="upload-photo-preview" ng-repeat="file in updc.files | filter: { valid: true }">
+                    <div class="upload-photo-preview_header" ng-bind="file.name"></div>
+                    <div class="upload-photo-preview_content" ng-click="updc.openPhotoSlider(file)">
+                        <img class="photo-grid-thumbnail no-select" ng-src="{{::file.thumbUrl}}"/>
+                    </div>
+                    <div class="upload-photo-preview_footer">
+                        <span>
+                            <button class="btn btn-link icon-btn" ng-click="updc.openPhotoSlider(file)">
+                                <i class="fa fa-search" ></i>
+                            </button>
+                            <button class="btn btn-link icon-btn" ng-click="updc.onInfoIconClick(file)">
+                                <i class="fa fa-info" ></i>
+                            </button>
+                        </span>
+                        <span>
+                            <button class="btn btn-link icon-btn" ng-click="updc.onDeleteIconClick(file)">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upload-progress-bar">
+            <uib-progressbar ng-show="updc.progressBar.count !== updc.progressBar.value" max="updc.progressBar.count" value="updc.progressBar.value">
+            </uib-progressbar>
+        </div>
+    </dialog-body>
+    <dialog-footer>
+        <div>
+            <span ng-show="updc.progressBar.count && updc.progressBar.count !== updc.progressBar.value && updc.progressBar.isUploading">
+                <span translate>dialog.uploadPhotos.uploaded</span>&nbsp;
+                <span ng-bind="updc.progressBar.value"></span>/<span ng-bind="updc.progressBar.count"></span>
+                <img class="local-spinner" ng-src="images/fa-spinner-anim.gif" />
+            </span>
+            <button type="button" class="btn btn-primary pull-right btn-save"
+                    ng-disabled="updc.buttonsDisabled" ng-click="updc.onUploadClick()" translate>dialog.button.upload</button>
+            <button type="button" class="btn btn-default pull-right btn-cancel"
+                    ng-disabled="updc.buttonsDisabled" ng-click="updc.close()" translate>dialog.button.cancel</button>
+        </div>
+    </dialog-footer>
+</dialog>-->

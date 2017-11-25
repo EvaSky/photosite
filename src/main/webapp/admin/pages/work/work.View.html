@@ -1,0 +1,16 @@
+<h3 class="title">Work space</h3>
+<div class="galleries-buttons">
+    <button class="btn-link icon-label-btn" ng-click="wc.uploadPhotos()"><i class="fa fa-upload"></i><span translate>Upload</span></button>
+    <div class="upload-button">
+        <button class="btn btn-link label-btn upload-photo-btn" ngf-select ngf-accept="'image/*'" ng-model="wc.inputPhoto"
+                ngf-change="wc.generateThumbnail(wc.inputPhoto)" ngf-max-files="10"
+                ngf-multiple="true" translate>Add files
+        </button>
+    </div>
+</div>
+<div class="upload-photo-preview" ng-repeat="file in wc.files">
+    <div class="upload-photo-preview_header" ng-bind="file.name"></div>
+    <div class="upload-photo-preview_content">
+        <img class="photo-grid-thumbnail no-select" ng-src="{{::file.thumbUrl}}"/>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+dialog {
+    display: block;
+    padding: 0;
+    border: 1px solid lightgray;
+}
+
+.dialog-title {
+    margin: 0;
+    border-bottom: 1px solid lightgrey;
+    & > dialog-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        .fa {
+            .dialog-close-btn();
+        }
+    }
+}
+
+.dialog-close-btn() {
+    cursor: pointer;
+    color: @input-border;
+    &:hover {
+        color: @border-color;
+    }
+}
+
+.dialog-body {
+    padding: 20px;
+}
+
+.dialog-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    button {
+        margin-left: 5px;
+    }
+}
+
+.modal-content {
+    border: 0;
+}
+
+.overlay-style() {
+    min-height: 100%;
+    width: 100%;
+    z-index: 1010;
+    background-color: rgba(0, 0, 0, 0.50);
+    overflow-x: hidden;
+}
+
+.size-inherit() {
+    width: inherit;
+    height: inherit;
+    & > * {
+        width: inherit;
+        height: inherit;
+        & > * {
+            width: inherit;
+            height: inherit;
+        }
+    }
+}
+
+.standard-modal {
+    .modal-dialog {
+        margin: auto;
+        width: 30vw;
+        height: 30vh;
+    }
+}
+
+.standard-modal-flex-height {
+    .modal-dialog {
+        width: 30vw;
+        min-height: 30vh;
+    }
+}
+
+
+.edit-modal-flex-height {
+    .modal-dialog {
+        margin: auto;
+        width: 50vw;
+        min-height: 50vh;
+    }
+}
+
+.standard-modal-flex {
+    .modal-dialog {
+        min-width: 30vw;
+        min-height: 30vh;
+    }
+}
+
+.full-screen-modal {
+    .modal-dialog {
+        margin: auto;
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+.full-screen-modal,
+.standard-modal,
+.standard-modal-flex-height,
+.edit-modal-flex-height,
+.standard-modal-flex {
+    .overlay-style;
+    display: flex !important;
+    .modal-content {
+        .size-inherit;
+    }
+    dialog {
+        position: relative;
+    }
+}
+
+.generic-dialog {
+    height: inherit;
+    .dialog-body {
+        height: 80%;
+    }
+}

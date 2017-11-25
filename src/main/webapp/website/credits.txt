@@ -1,0 +1,60 @@
+
+-----
+CREDITS :
+
+Camera Logo
+https://www.iconfinder.com/icons/274902/camera_media_multimedia_paparazzy_photo_photography_photos_picture_pictures_shooting_studio_technology_icon#size=128
+
+Montserrat Font
+http://www.fontsquirrel.com/fonts/montserrat
+
+Slippry
+https://github.com/booncon/slippry
+
+Animated Responsive Image Grid
+http://tympanus.net/codrops/2012/08/02/animated-responsive-image-grid/
+
+CollagePlus
+http://ed-lea.github.io/jquery-collagePlus/
+
+PhotoSwipe
+https://github.com/dimsemenov/photoswipe
+
+Subtle Hover Effects
+http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+
+Bootstrap
+http://getbootstrap.com/
+
+Fluidbox Plugin
+https://github.com/terrymun/Fluidbox
+
+Uniform
+https://github.com/pixelmatrix/uniform
+
+Social-Photo-Stream-jQuery-Plugin
+https://github.com/pixel-industry/Social-Photo-Stream-jQuery-Plugin
+
+Navicon Transformicons
+http://sarasoueidan.com/demos/navicon-transformicons/
+
+OwlCarousel2
+https://github.com/OwlFonk/OwlCarousel2
+
+Preloader 
+http://preloaders.net/en/popular
+
+Magnific-Popup
+https://github.com/dimsemenov/Magnific-Popup
+
+Magnific Popup: animate image "in" only after it's loaded + add CSS-based preloader
+http://codepen.io/dimsemenov/pen/HdjtL
+
+Masonry Script
+http://masonry.desandro.com/
+
+view.js
+http://www.finegoodsmarket.com/view
+
+DUMMY IMAGES
+-----
