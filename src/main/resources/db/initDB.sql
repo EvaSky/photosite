@@ -7,5 +7,5 @@ CREATE TABLE records
 (
   id        INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
   date      DATE NOT NULL,
-  text      VARCHAR NOT NULL,
+  text      VARCHAR NOT NULL
 );

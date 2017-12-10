@@ -19,8 +19,8 @@ import java.util.List;
 public class Application implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-    @Autowired
-    DataSource dataSource;
+/*    @Autowired
+    DataSource dataSource;*/
 
     @Autowired
     private RecordRepository rep;

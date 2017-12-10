@@ -19,5 +19,8 @@
     "ng-file-upload": "12.0.4",
     "angular-drag-and-drop-lists": "2.1.0",
     "jquery-file-download": "^1.4.6"
+  },
+  "resolutions": {
+    "angular": "~1.6.0"
   }
 }
